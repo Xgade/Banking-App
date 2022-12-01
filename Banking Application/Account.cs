@@ -8,7 +8,15 @@ namespace Banking_Application
 {
     internal class Account
     {
-        int accountNum;
-        string accountOwner; // Person class
+        List<Account> accounts = new List<Account>();
+        public int accountNum;
+        public string accountOwner; // Person class
+
+        // constructor
+        public Account(int accountNum, string accountOwner)
+        {
+            this.accountNum = accountNum;
+            this.accountOwner = accountOwner;
+        }
     }
 }

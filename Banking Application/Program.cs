@@ -8,6 +8,8 @@ namespace Banking_Application
         [STAThread]
         static void Main()
         {
+            Account acc1 = new Account(123456789, "asdfasdf");
+
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
